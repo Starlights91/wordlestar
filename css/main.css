@@ -5,10 +5,6 @@ main {
   align-items: center;
   gap: 5px;
   scale: 0.8;
-  margin-top: -40px;
-  position: relative; /* 해당 요소가 배치되어야 할 곳을 기준으로 상하좌우로 지정한 값 만큼 떨어진다. */
-  width: 100vw;
-  /* margin-bottom: 30px; */
 }
 
 .board-row {
@@ -25,4 +21,7 @@ main {
   border: 2.5px solid #d3d6da;
   width: 60px;
   height: 60px;
+  font-weight: bolder;
+  font-size: xx-large;
+  cursor: pointer;
 }
