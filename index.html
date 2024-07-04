@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordlestar!!</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <header>
+      <!-- 헤더 왼쪽 -->
+      <div class="header-menu">        
+          <img src="assets/3bars.svg" alt="" />
+        </div>
+      </div>
+      <!-- 헤더 중간 -->
+      <div class="header-title">Wordlestar</div>
+      <!-- 헤더 오른쪽 -->
+      <div class="header-icons">
+        <div class="header-icons__icon">
+          <img src="assets/question.svg" alt="" />
+        </div>
+        <div class="header-icons__icon">
+          <img src="assets/chart bar.svg" alt="" />
+        </div>
+        <div class="header-icons__icon">
+          <img src="assets/setting.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 타이머 -->
+      <div id="timer">Time: 00:00</div>
+      <!-- 메인 가로 1째줄 --> 
+      <div class="board-row row-0">
+        <!-- data-index(속성)는 필요한 블록을 쉽게 찾아가기 위해 사용.00=0번줄에 1번째블록 (참고: data-어떤이름도 기재가능.) -->
+        <div class="board-column" data-index="00"></div> 
+        <div class="board-column" data-index="01"></div>
+        <div class="board-column" data-index="02"></div>
+        <div class="board-column" data-index="03"></div>
+        <div class="board-column" data-index="04"></div>
+      </div>
+      <!-- 메인 가로 2째줄  -->
+      <div class="board-row row-1">
+        <div class="board-column" data-index="10"></div>
+        <div class="board-column" data-index="11"></div>
+        <div class="board-column" data-index="12"></div>
+        <div class="board-column" data-index="13"></div>
+        <div class="board-column" data-index="14"></div>
+      </div>
+      <!-- 메인 가로 3째줄  -->
+      <div class="board-row row-2">
+        <div class="board-column" data-index="20"></div>
+        <div class="board-column" data-index="21"></div>
+        <div class="board-column" data-index="22"></div>
+        <div class="board-column" data-index="23"></div>
+        <div class="board-column" data-index="24"></div>
+      </div>
+      <!-- 메인 가로 4째줄  -->
+      <div class="board-row row-3">
+        <div class="board-column" data-index="30"></div>
+        <div class="board-column" data-index="31"></div>
+        <div class="board-column" data-index="32"></div>
+        <div class="board-column" data-index="33"></div>
+        <div class="board-column" data-index="34"></div>
+      </div>
+      <!-- 메인 가로 5째줄 -->
+      <div class="board-row row-4">
+        <div class="board-column" data-index="40"></div>
+        <div class="board-column" data-index="41"></div>
+        <div class="board-column" data-index="42"></div>
+        <div class="board-column" data-index="43"></div>
+        <div class="board-column" data-index="44"></div>
+      </div>
+      <!-- 메인 가로 6째줄 -->
+      <div class="board-row row-5">
+        <div class="board-column" data-index="50"></div>
+        <div class="board-column" data-index="51"></div>
+        <div class="board-column" data-index="52"></div>
+        <div class="board-column" data-index="53"></div>
+        <div class="board-column" data-index="54"></div>
+      </div>
+    </main>
+
+    <footer> 
+      <!-- 가로 첫째줄 & 10칸 -->
+      <div class="keyboard-row row-0">
+        <!-- data-key(속성)는 특정 키보드가 눌렸을 때, 눌린 블록의 특정키를 쉽게 찾아가기 위해 사용. -->    
+        <div class="keyboard-block" data-key="Q">Q</div>
+        <div class="keyboard-block" data-key="W">W</div>
+        <div class="keyboard-block" data-key="E">E</div>
+        <div class="keyboard-block" data-key="R">R</div>
+        <div class="keyboard-block" data-key="T">T</div>
+        <div class="keyboard-block" data-key="Y">Y</div>
+        <div class="keyboard-block" data-key="U">U</div>
+        <div class="keyboard-block" data-key="I">I</div>
+        <div class="keyboard-block" data-key="O">O</div>
+        <div class="keyboard-block" data-key="P">P</div>
+      </div>
+      <!-- 가로 둘째줄 & 9칸 -->
+      <div class="keyboard-row row-1">
+        <div class="keyboard-block" data-key="A">A</div>
+        <div class="keyboard-block" data-key="S">S</div>
+        <div class="keyboard-block" data-key="D">D</div>
+        <div class="keyboard-block" data-key="F">F</div>
+        <div class="keyboard-block" data-key="G">G</div>
+        <div class="keyboard-block" data-key="H">H</div>
+        <div class="keyboard-block" data-key="J">J</div>
+        <div class="keyboard-block" data-key="K">K</div>
+        <div class="keyboard-block" data-key="L">L</div>
+      </div>
+      <!-- 가로 셋째줄 & 9칸 -->
+      <div class="keyboard-row row-2">
+        <div class="keyboard-block__custom__1" data-key="ENTER">ENTER</div>
+        <div class="keyboard-block" data-key="Z">Z</div>
+        <div class="keyboard-block" data-key="X">X</div>
+        <div class="keyboard-block" data-key="C">C</div>
+        <div class="keyboard-block" data-key="V">V</div>
+        <div class="keyboard-block" data-key="B">B</div>
+        <div class="keyboard-block" data-key="N">N</div>
+        <div class="keyboard-block" data-key="M">M</div>
+        <div class="keyboard-block__custom__2" data-key="BACKSPACE">
+          <img src="assets/backspace.svg" alt="BACKSPACE">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

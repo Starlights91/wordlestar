@@ -1,0 +1,50 @@
+/* 헤더 전체 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d6da;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 왼쪽 */
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin: 2.5px 0 2.5px 0;
+}
+.header-menu img {
+  width: 25px;
+  height: 25px;
+}
+
+/* 중간 */
+.header-title {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative; /* 원래 배치되어야 할 위치에서 지정한 값만큼 떨어진곳에 요소를 배치 */
+  left: 37px;
+}
+
+/* 오른쪽 */
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin: 2.5px 0 2.5px 0;
+}
+
+.header-icons__icon img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
