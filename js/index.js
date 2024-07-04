@@ -11,7 +11,7 @@ function appStart() {
     const div = document.createElement("div");
     div.innerText = "게임이 종료됐습니다.";
     div.style =
-      "display: flex; flex-direction: column; justify-content:center; position: absolute; align-items:center; top:60vh; left:35vw; font-size: 20px; background-color: grey; width:200; height:100px; margin: -200px 0 0 0;"; //글자가 정중앙에 위치하도록 해보기
+      "display: flex; justify-content:center; position: absolute; align-items:center; top:60vh; left:35vw; font-size: 20px; background-color: grey; width:200; height:100px; margin: -220px 0 0 0;"; //글자가 정중앙에 위치하도록 해보기
     document.body.appendChild(div);
   };
   const gameover = () => {
