@@ -25,8 +25,23 @@ function appStart() {
     index = 0;
   };
 
-  const handleEnterKey = () => {
+  // 정답 확인 (서버에 요청을 보내는 비동기 로직)
+  const handleEnterKey = async () => {
     let 맞은_갯수 = 0;
+
+    //서버에서 정답을 받아오는 코드 1(문자열로 만들었을 때)
+    const 응답 = await fetch("/answer"); // '응답'은: await 기다려서 /answer로 요청을 보내서 '응답'을 받고
+    const 정답 = await 응답.json(); //'정답'은 그 응답을 await 기다려서 '정답'을 업데이트 한다는 의미.
+    console.log(정답);
+
+    // //서버에서 정답을 받아오는 코드 2(정답을 객체로 만들었을 때)
+    // const 응답 = await fetch("/answer"); //'응답'을 await 기다려서 /answer로 요청을 보내서 '응답'을 받고
+    // console.log("응답", 응답);
+    // const 정답 = await 응답.json(); //그 응답을 json 은 js한테 맞는 포맷(값)으로 바꿔주는것도 시간이 조금 걸리기 때문에 await 를 써서 기다려주고 바꿔준 그 값을 '정답'에 넣어준다(업데이트 한다)는 의미.
+    // console.log("정답 객체", 정답_객체);
+    // const 정답 = 정답_객체.answer;
+    // console.log("정답", 정답);
+
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
         `.board-column[data-index='${attempts}${i}']`
