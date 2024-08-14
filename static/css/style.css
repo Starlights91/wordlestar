@@ -1,0 +1,15 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+
+.body {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 96vw;
+}

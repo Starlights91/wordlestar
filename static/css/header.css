@@ -17,7 +17,7 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   margin: 2.5px 0 2.5px 0;
 }
 .header-menu img {
@@ -29,7 +29,7 @@ header {
 .header-title {
   font-size: 25px;
   font-weight: bold;
-  position: relative; /* 원래 배치되어야 할 위치에서 지정한 값만큼 떨어진곳에 요소를 배치 */
+  /* position: relative; 원래 배치되어야 할 위치에서 지정한 값만큼 떨어진곳에 요소를 배치 */
   left: 37px;
 }
 
@@ -39,7 +39,7 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   margin: 2.5px 0 2.5px 0;
 }
 
