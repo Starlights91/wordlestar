@@ -21,7 +21,7 @@ function appStart() {
       index += 1;
     }
   };
-
+  // 화면에 있는 키보드 마우스로 누르는 형식 (아직 미완성)
   const keys = document.querySelectorAll(".keyboard-column"); //일반키들 전체 선택하기
   //반환받은 keys는 리스트형식이다. 따라서 keys 자체에 이벤트를 줄수 없기 때문에 배열순회함수인 foreach로 key라는 이름의 매개변수로 정한 요소 하나 하나에 이벤트를 준다.
   keys.forEach((key) => {
@@ -65,6 +65,7 @@ function appStart() {
     const 응답 = await fetch("/answer");
     //응답을 받고 그 응답을 json 포맷으로 변경을 기다리면 정답 값 안에 있다.
     const 정답 = await 응답.json();
+    console.log(정답);
 
     // //서버에서 정답을 받아오는 코드 2(정답을 객체로 만들었을 때)
     // const 응답 = await fetch("/answer"); //'응답'을 await 기다려서 /answer로 요청을 보내서 '응답'을 받고
@@ -125,7 +126,8 @@ function appStart() {
     else if (index === 5) {
       if (event.key === "Enter") handleEnterKey();
       else return;
-    } // 인덱스가 5일때(맨끝까지 단어가 입력됐을 때) Enter키누르면 엔터키에 대한 동작 일어나고, 다른 키가 눌리면 그냥 아무것도 안하고 return(반환)해서 끝내라는 뜻.
+    }
+    // 인덱스가 5일때(맨끝까지 단어가 입력됐을 때) Enter키누르면 엔터키에 대한 동작 일어나고, 다른 키가 눌리면 그냥 아무것도 안하고 return(반환)해서 끝내라는 뜻.
     else if (65 <= keyCode && keyCode <= 90) {
       thisBlock.innerText = key; //keyCode는 유니크해서 겹칠수 없고 A=65~Z=90 에 만족하는 키만 입력.
       index += 1; //index += 1; & index == index + 1; == index++; 3가지 모두 (완전같은건 아니지만)여기선 같은 뜻.
